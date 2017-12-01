@@ -32,13 +32,23 @@ public class MainActivity extends AppCompatActivity {
 
         //Find the view that shows the numbers category
         TextView numbers = (TextView) findViewById(R.id.numbers);
-
         //Set a click listener on that view
         numbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
                 startActivity(numbersIntent);
+            }
+        });
+
+        //Find the view that shows the family category
+        TextView family = (TextView) findViewById(R.id.family);
+        //Set a click listener on that view
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                startActivity(familyIntent);
             }
         });
     }
