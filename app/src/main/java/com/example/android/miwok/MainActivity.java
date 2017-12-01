@@ -51,5 +51,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(familyIntent);
             }
         });
+
+        //Find the view that shows the family category
+        TextView colors = (TextView) findViewById(R.id.colors);
+        //Set a click listener on that view
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(colorsIntent);
+            }
+        });
+
+        //Find the view that shows the family category
+        TextView phrases = (TextView) findViewById(R.id.phrases);
+        //Set a click listener on that view
+        phrases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(phrasesIntent);
+            }
+        });
     }
 }
