@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Find the view that shows the family category
+        //Find the view that shows the colors category
         TextView colors = (TextView) findViewById(R.id.colors);
         //Set a click listener on that view
         colors.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //Find the view that shows the family category
+        //Find the view that shows the phrases category
         TextView phrases = (TextView) findViewById(R.id.phrases);
         //Set a click listener on that view
         phrases.setOnClickListener(new View.OnClickListener() {
