@@ -2,7 +2,7 @@ package com.example.android.miwok;
 
 /**
  * Created by ElleMwa on 03/12/2017.
- * {@Link Word} represents a vocabulary word that the user wants to learn.
+ * {@link Word} represents a vocabulary word that the user wants to learn.
  * It contains a default translation an d a Miwok translation for that word.
  */
 
@@ -28,7 +28,7 @@ public class Word {
     }
 
     /** Get the Miwok translation of the word **/
-    public String getMiwokTRanslation() {
+    public String getMiwokTranslation() {
         return mMiwokTranslation;
     }
 }
